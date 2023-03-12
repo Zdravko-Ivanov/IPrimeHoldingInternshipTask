@@ -1,0 +1,12 @@
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.csproj.AssemblyReference.cache
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.GeneratedMSBuildEditorConfig.editorconfig
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.AssemblyInfoInputs.cache
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.AssemblyInfo.cs
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.csproj.CoreCompileInputs.cache
+E:\Task C#\EmployeeTask\Services.Mapping\bin\Debug\net6.0\Services.Mapping.deps.json
+E:\Task C#\EmployeeTask\Services.Mapping\bin\Debug\net6.0\Services.Mapping.dll
+E:\Task C#\EmployeeTask\Services.Mapping\bin\Debug\net6.0\Services.Mapping.pdb
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.dll
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\refint\Services.Mapping.dll
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\Services.Mapping.pdb
+E:\Task C#\EmployeeTask\Services.Mapping\obj\Debug\net6.0\ref\Services.Mapping.dll

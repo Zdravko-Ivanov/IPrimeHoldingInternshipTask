@@ -1,0 +1,56 @@
+﻿@model ViewModels.TaskInputModel
+@{
+    ViewData["Title"] = "Tasks";
+    int row = 0;
+}
+<h1>Tasks: <a class="btn btn-success btn-lg" asp-area="" asp-controller="Task" asp-action="Create">Add</a></h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Task Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Employee</th>
+      <th scope="col">Due Date</th>
+      <th scope="col">Task Completed</th>      
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      @foreach(var task in @Model.Tasks)
+{
+
+    row++;
+    <tr>
+      <th scope="row">@row</th>
+      <td>@task.Title</td>
+      <td>@task.Description</td>
+      <td>@Model.Employees.FirstOrDefault(x => x.Value == task.EmployeeId).Text</td>
+      <td>@task.DueDate.ToShortDateString()</td>
+      <td>
+          
+                    <form asp-controller="Task" asp-action="Complete" method="get">
+                    <input type="hidden" name="employeeId" value="@task.EmployeeId"/>
+                    <input type="hidden" name="taskId" value="@task.Id" />                    
+                    @if(!task.IsCompleted){  <button type="get" class="btn btn-success">Complete!</button>}
+                    @if(task.IsCompleted) { <div>Task is alredy completed!</div> }
+                    </form>
+      </td>
+      <td>         
+          <form asp-controller="Task" asp-action="Edit" method="get">
+                    <input type="hidden" asp-for="Id" value="@task.Id" />
+                    <button type="submit" class="btn btn-primary">Edit</button>
+                    </form>
+    </td><td>
+          <form asp-controller="Task" asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" value="@task.Id" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                    </td>
+    </tr>
+
+}
+  </tbody>
+</table>

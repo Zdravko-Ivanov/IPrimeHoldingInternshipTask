@@ -1,0 +1,26 @@
+﻿@model ViewModels.TaskInputModel;
+
+
+        <form method="post">
+            <input type="hidden" asp-for="Id" class="form-control" value="@Model.Id" />
+
+            <label>Title:</label>
+            <input asp-for="Title" class="form-control" value="@Model.Title"/><br />
+            <span asp-validation-for="Title"></span>
+            
+            <label>Description:</label>
+            <textarea asp-for="Description" class="form-control"></textarea><br />
+            <span asp-validation-for="Description"></span>
+            
+            <label>Employee assign:</label>
+            <select asp-for="EmployeeId" asp-items="@Model.Employees" class="form-control"></select>
+            <br />
+      
+            
+            <label>DueDate:</label>
+            <input asp-for="DueDate" class="form-control" /><br />
+            <span asp-validation-for="DueDate"></span>
+
+            <input type="submit" class="btn btn-success" value="Update Task" />
+
+        </form>

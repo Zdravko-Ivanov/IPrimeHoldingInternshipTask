@@ -1,0 +1,35 @@
+﻿@model ViewModels.DepartmentInputModel
+@{
+    ViewData["Title"] = "Departments";
+    int row = 0;
+}
+
+Departments: <a class="btn btn-success btn-lg" asp-area="" asp-controller="Department" asp-action="Create">Add</a></h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name of department</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      @foreach(var department in @Model.Departments)
+{
+    row++;
+    <tr>
+      <th scope="row">@row</th>
+      <td>@department.Name</td>
+      
+      <td>
+          <form asp-controller="Department" asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" value="@department.Id" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                    </td>
+    </tr>
+
+}
+  </tbody>
+</table>
