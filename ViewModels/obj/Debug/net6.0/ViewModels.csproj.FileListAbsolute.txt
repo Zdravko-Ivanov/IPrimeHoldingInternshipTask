@@ -1,0 +1,17 @@
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\ViewModels.deps.json
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\ViewModels.dll
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\ViewModels.pdb
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\Data.dll
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\Data.pdb
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.csproj.AssemblyReference.cache
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.AssemblyInfoInputs.cache
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.AssemblyInfo.cs
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.csproj.CoreCompileInputs.cache
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.csproj.CopyComplete
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.dll
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\refint\ViewModels.dll
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ViewModels.pdb
+E:\Task C#\EmployeeTask\ViewModels\obj\Debug\net6.0\ref\ViewModels.dll
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\Services.Mapping.dll
+E:\Task C#\EmployeeTask\ViewModels\bin\Debug\net6.0\Services.Mapping.pdb

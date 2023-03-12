@@ -1,0 +1,89 @@
+﻿@model ViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    int row = 0;
+    int row1 = 0;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="align-content-center">
+
+        <table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th scope="col" colspan="2">We Have</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Employees</td>
+      <td>@Model.EmployeeCount</td>
+    </tr>
+    <tr>
+      <td>Tasks</td>
+      <td>@Model.TaskCount</td>
+    </tr>
+    <tr>
+      <td>Departments</td>
+      <td>@Model.DepartmentCount</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        <h2> Top 5 Employees completed most tasks in past month!</h2>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Completed Tasks</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      @foreach(var employee in @Model.TopEmployees)
+{
+
+    row++;
+    <tr>
+      <th scope="row">@row</th>
+      <td>@employee.Key</td>
+      <td>@employee.Value</td>
+    </tr>
+
+
+
+}
+  </tbody>
+</table>
+
+<h2> Top 5 Employees with highest salary!</h2>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Salary</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      @foreach(var employee in @Model.TopSalarys)
+{
+
+    row1++;
+    <tr>
+      <th scope="row">@row1</th>
+      <td>@employee.FullName</td>
+      <td>@employee.Salary</td>
+    </tr>
+
+
+
+}
+  </tbody>
+</table>
+    </div>
+</div>

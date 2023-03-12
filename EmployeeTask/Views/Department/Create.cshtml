@@ -1,0 +1,12 @@
+﻿@model ViewModels.DepartmentInputModel;
+
+
+        <form method="post">
+            <label>Name:</label>
+            <input asp-for="Name" class="form-control" /><br />
+            <span asp-validation-for="Name"></span>
+           
+
+            <input type="submit" class="btn btn-success" value="Add Department" />
+
+        </form>

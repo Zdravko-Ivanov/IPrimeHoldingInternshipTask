@@ -1,0 +1,29 @@
+﻿@model ViewModels.EmployeeInputModel
+
+
+        <form method="post">
+            <label>Full Name:</label>
+            <input asp-for="FullName" class="form-control" /><br />
+            <span asp-validation-for="FullName"></span>
+            
+            <label>Email:</label>
+            <input asp-for="Email" class="form-control" /><br />
+            <span asp-validation-for="Email"></span>
+            
+            <label>Phone:</label>
+            <input asp-for="Phone" class="form-control" /><br />
+            <span asp-validation-for="Phone"></span>
+            
+            <label>Birth Date:</label>
+            <input asp-for="DateOfBirth" class="form-control" /><br />
+            <span asp-validation-for="DateOfBirth"></span>
+            
+            <label>Salary:</label>
+            <input asp-for="Salary" class="form-control" /><br />
+            <span asp-validation-for="Salary"></span>
+
+
+
+            <input type="submit" class="btn btn-success" value="Add Employee" />
+
+        </form>
